@@ -10,7 +10,8 @@ header {
   flex-direction: row;
   min-height: 78px;
   max-height: 496;
-  width: 1126px;
+  max-width: 1126px;
+  width: 100%;
   justify-content: space-between;
   margin: 20px;
 
@@ -23,6 +24,8 @@ header {
 }
 
 .h1 {
+  display: flex;
+  align-self: center;
   max-width: 350px;
   height: 29px;
 }
@@ -30,7 +33,9 @@ header {
 
 nav {
   color: #2F281E;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
+  min-height: 78px;
   margin-top: 20px;
   margin-left:20px;
   margin-right:20px;
@@ -79,16 +84,17 @@ li {
   font-weight: bold;
   font-size: 44px;
   float: none;
-  width: 100%;
   max-width: 458px;
-  height: 108px;
+  width: 100%;
+  min-height: 108px;
   line-height: 54px;
   justify-content: center;
 }
 
 .h2 {
-  width: 458px;
-  height: 108px;
+  max-width: 458px;
+  width: 100%;
+  min-height: 108px;
   }
 
 .main-info {
@@ -101,7 +107,7 @@ li {
   letter-spacing: 0px;
   max-width: 458px;
   width: 100%;
-  height: 95px;
+  min-height: 95px;
   box-sizing: border-box;
   float: none;
   line-height: 18px;
@@ -126,13 +132,13 @@ li {
   height: 53px;
 }
 
-
  /* ------------------------------------------- */
 
 .seconde-block {
   display: flex;
-  width: 2211px;
-  height: 543px;
+  max-width: 2211px;
+  width: 100%;
+  min-height: 543px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; 
@@ -143,7 +149,8 @@ li {
   flex-wrap: wrap;
   font-size: 36px;
   height: 108px;
-  width: 539px;
+  max-width: 539px;
+  width: 100%;
 }
 
 .box-row {
@@ -151,8 +158,9 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 204px;
+  min-height: 204px;
   max-width: 1095px;
+  width: 100%;
   margin: 20px;
 } 
 
@@ -162,6 +170,7 @@ li {
   justify-content: space-between;
   align-items: center;
   max-width: 240px;
+  width: 100%;
   height: 178px;
   margin-left: 20px;
   padding-left: 20px;
@@ -183,9 +192,6 @@ li {
 }
 
 .box-blue {
-  font-size: 22px;
-  max-width: 240px;
-  width: 100%;
   width: 240px;
   height: 178px;
 } 
@@ -195,21 +201,30 @@ li {
   color: white;
   width: 175px;
   height: 53px;
+  cursor: pointer;
 }
+
+.signupnow-btn:hover {
+  opacity: 0.8;
+}
+
+
+
 
 /* --------------------------------------*/
 
 .third-block {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .text-part {
   display: flex;
   flex-direction: column;
   max-width: 456px;
-  height: 531px;
+  width: 100%;
+  min-height: 531px;
   font-size: 16px;
   justify-content: flex-start;
 
@@ -223,12 +238,11 @@ h4 {
   display: flex;
   font-size: 36px;
 }
-
+/* 
 .text-bubble {
   display: flex;
-  align-items: flex-end;
 
-}
+} */
 
 /* ------------------------------------*/
 
@@ -236,6 +250,7 @@ h4 {
   display: flex;
   width: 1121px;
   height: 521px;
+  justify-content: space-between;
 }
 
 .manager-part {
@@ -243,7 +258,8 @@ h4 {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 427px;
-  height: 486px;
+  width: 100%;
+  min-height: 486px;
   font-size: 16px;
   justify-content: flex-start;
   align-items: center;
@@ -270,6 +286,7 @@ h4 {
 
 .laptop-guy {
   display: flex;
+  align-items: flex-end;
 }
 
 /* -------------------------------------*/
@@ -278,7 +295,8 @@ h4 {
 .fifth-block {
   display: flex;
   max-width: 609px;
-  height: 1110px;
+  width: 100%;
+  min-height: 1110px;
   font-size: 16px;
   line-height: 26px;
 }
@@ -286,16 +304,18 @@ h4 {
 .marketers {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 486px;
-  height: 90px;
+  width: 100%;
+  min-height: 90px;
   justify-content: flex-start;
   align-items: center;
 }
 
+
 .screen-squares {
   display: flex;
-  align-self: flex-end;
-
+  align-items: flex-end;
 }
 
 /* ----------------------------------------*/
@@ -306,7 +326,7 @@ h4 {
   justify-content: space-evenly;
   max-width: 1109px;
   width: 100%;
-  height: 308px;
+  min-height: 308px;
 }
 
 .logo-foot {
@@ -322,14 +342,16 @@ h4 {
 
 } */
 .search-bar {
-  width: 325px;
-  height: 48px;
+  max-width: 325px;
+  width: 100%;
+  min-height: 48px;
 }
 .signupnow2-btn {
   background-color: #FF9900;
   color: white;
   width: 131px;
   height: 39px;
+  
 }
 
 
